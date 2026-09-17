@@ -22,8 +22,17 @@ jobs:
 
       - name: Aceptar licencias e instalar plataformas/build-tools
         run: |
-          yes | sdkmanager --licenses > /dev/null || true
-          sdkmanager "platforms;android-34" "build-tools;34.0.0"
+          set -e
+          SDK_ROOT="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
+          echo "Buscando sdkmanager dentro de $SDK_ROOT ..."
+          SDKMANAGER=$(find "$SDK_ROOT" -maxdepth 4 -type f -name sdkmanager 2>/dev/null | sort -V | tail -n 1)
+          if [ -z "$SDKMANAGER" ]; then
+            echo "No se encontró sdkmanager en $SDK_ROOT"
+            exit 1
+          fi
+          echo "Usando: $SDKMANAGER"
+          yes | "$SDKMANAGER" --licenses > /dev/null || true
+          "$SDKMANAGER" "platforms;android-34" "build-tools;34.0.0"
 
       - name: Configurar Gradle 8.6
         uses: gradle/actions/setup-gradle@v4
