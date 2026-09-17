@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nav_radar"
+        android:textAppearance="@style/Text.Title"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.hassiel.rideadvisor.ui.RadarView
+        android:id="@+id/radar_view"
+        android:layout_width="240dp"
+        android:layout_height="240dp" />
+
+    <TextView
+        android:id="@+id/text_radar_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/radar_scanning"
+        android:textColor="@color/accent_green"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/text_radar_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/radar_status_scanning"
+        android:textAppearance="@style/Text.Body" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/card_last_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_last_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text.Title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_last_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/Text.Body" />
+
+        <TextView
+            android:id="@+id/text_last_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Text.Body" />
+
+        <TextView
+            android:id="@+id/text_last_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

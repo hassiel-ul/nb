@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RideAdvisor</string>
+    <string name="app_tagline">Asistente inteligente para conductores</string>
+
+    <string name="nav_dashboard">Inicio</string>
+    <string name="nav_radar">Radar IA</string>
+    <string name="nav_history">Historial</string>
+    <string name="nav_settings">Ajustes</string>
+
+    <string name="radar_scanning">IA BUSCANDO SOLICITUDES</string>
+    <string name="radar_status_scanning">Buscando solicitudes…</string>
+    <string name="radar_status_detected">Solicitud detectada</string>
+    <string name="radar_status_discarded">Solicitud descartada por filtros</string>
+    <string name="radar_status_paused">Radar en pausa</string>
+
+    <string name="dashboard_service_active">Servicio activo</string>
+    <string name="dashboard_listening">Escuchando notificaciones</string>
+    <string name="dashboard_radar_active">Radar activo</string>
+    <string name="dashboard_stats_detected">Solicitudes detectadas</string>
+    <string name="dashboard_stats_accepted">Aceptadas</string>
+    <string name="dashboard_stats_rejected">Rechazadas</string>
+
+    <string name="settings_title">Configuración de búsqueda</string>
+    <string name="settings_min_price">Precio mínimo</string>
+    <string name="settings_max_distance">Distancia máxima (km)</string>
+    <string name="settings_apps">Aplicaciones permitidas</string>
+    <string name="settings_radar_toggle">Activar radar</string>
+    <string name="settings_overlay_toggle">Activar overlay</string>
+    <string name="settings_sound_toggle">Sonido de alerta</string>
+    <string name="settings_vibration_toggle">Vibración</string>
+    <string name="settings_auto_mode">Modo automático</string>
+
+    <string name="history_title">Historial</string>
+    <string name="history_empty">Aún no hay solicitudes registradas.</string>
+
+    <string name="permission_notification_title">Acceso a notificaciones</string>
+    <string name="permission_notification_desc">RideAdvisor necesita leer las notificaciones para detectar solicitudes de viaje.</string>
+    <string name="permission_overlay_title">Mostrar sobre otras apps</string>
+    <string name="permission_overlay_desc">RideAdvisor necesita este permiso para mostrar el aviso flotante mientras usas Uber, inDrive o DiDi.</string>
+    <string name="permission_enable_button">Activar permiso</string>
+    <string name="permission_granted">Permiso concedido</string>
+
+    <string name="onboarding_step1_title">Paso 1</string>
+    <string name="onboarding_step1_desc">Permitir acceso a notificaciones.</string>
+    <string name="onboarding_step2_title">Paso 2</string>
+    <string name="onboarding_step2_desc">Permitir mostrar sobre otras aplicaciones.</string>
+    <string name="onboarding_step3_title">Paso 3</string>
+    <string name="onboarding_step3_desc">Configurar precio mínimo.</string>
+    <string name="onboarding_step4_title">Paso 4</string>
+    <string name="onboarding_step4_desc">Configurar distancia máxima.</string>
+    <string name="onboarding_step5_title">Paso 5</string>
+    <string name="onboarding_step5_desc">Seleccionar aplicaciones.</string>
+    <string name="onboarding_step6_title">Paso 6</string>
+    <string name="onboarding_step6_desc">Activar RideAdvisor.</string>
+    <string name="onboarding_ready">RideAdvisor está listo.</string>
+    <string name="onboarding_next">Siguiente</string>
+    <string name="onboarding_finish">Comenzar</string>
+
+    <string name="overlay_accepted">SOLICITUD ACEPTABLE</string>
+    <string name="overlay_close">Cerrar</string>
+    <string name="overlay_minimize">Minimizar</string>
+
+    <string name="rejection_price">Precio inferior al mínimo configurado.</string>
+    <string name="rejection_distance">Distancia superior a la máxima configurada.</string>
+    <string name="rejection_app">Aplicación no permitida en la configuración.</string>
+    <string name="rejection_incomplete">No se pudo determinar precio o distancia.</string>
+</resources>
