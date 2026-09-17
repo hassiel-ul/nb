@@ -20,12 +20,10 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Configurar Android SDK
-        uses: android-actions/setup-android@v3
-
-      - name: Instalar plataformas y build-tools necesarios
+      - name: Aceptar licencias e instalar plataformas/build-tools
         run: |
-          sdkmanager "platforms;android-34" "build-tools;34.0.0" > /dev/null
+          yes | sdkmanager --licenses > /dev/null || true
+          sdkmanager "platforms;android-34" "build-tools;34.0.0"
 
       - name: Configurar Gradle 8.6
         uses: gradle/actions/setup-gradle@v4
